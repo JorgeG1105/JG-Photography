@@ -1,6 +1,10 @@
 body {
 	margin: 0;
 	padding: 0;
+  	display: flex;
+  	height: 100vh;
+  	overflow: hidden;
+  	font-family: 'Raleway', sans-serif;
 }
 
 ul {
@@ -12,12 +16,9 @@ ul {
 	background-color: black;
 	color: white;
 	width: 60px;
-	height: 100%;
 	text-align: center;
-	position: fixed;
 	border-right: 6px solid #766E6B;
-	display: flex;
-	flex-direction: column;
+  	overflow-y: auto;
 }
 
 #sidenav ul {
@@ -25,16 +26,15 @@ ul {
 	flex-direction: column;
 	padding: 0;
 	margin: 0;
+  	justify-content: center;
 }
 
-
-#sidenav li:nth-child(1){
-	margin-bottom: 120px;
+#sidenav ul li:first-child {
+  margin-bottom: auto;
 }
-
-#sidenav li:nth-child(6){
-	margin-top: 195px;
-}
+#sidenav ul li:last-child {
+  margin-top: auto;
+  }
 
 #sidenav a {
 	display: block;
@@ -54,18 +54,69 @@ ul {
 
 /*-------------Header Styles-------------------------------*/
 header {
-	
+	padding: 40px 30px;
+	border-bottom: 1px solid grey;
+	background-color: #F7F6F2;
+}
+
+header h1, h3 {
+	font-family: 'Tangerine', cursive;
+}
+
+header h1 {
+	font-size: 90px;
+}
+
+header h3 {
+	font-size: 40px;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+	padding: 0 0 12px 0;
+	line-height: 1.5em;
+}
+
+header a:hover {
+	transition: color 1s;
+	color: #766E6B;
+}
+
+.active {
+	color: #766E6B;
+}
+
+.smalltxt {
+	font-size: 12px;
+}
+
+.topnavitems {
+	padding: 20px;
+	position: relative;
 }
 
 /*------------------Main Navigation-----------------------*/
 
-#mainnav {
+#mainnav ul {
+	justify-content: center;
 }
+
+#mainnav li {
+	margin: 0 20px;
+
+}
+
+#mainnav a {
+	text-decoration: none;
+}
+
 
 /*--------------------Container Area------------------------*/
 
 #container {
-
+ flex: 1 0 0;
+ overflow-y: auto;
 }
 
 /*-----------------------Footer Styles---------------------*/
@@ -74,6 +125,11 @@ footer {
 
 }
 
+
+/*-------------------Js Fade In Property-------------------*/
+.hidden {
+	display: none;
+}
 
 /*-------------------Flexbox-----------------------*/
 .col {
