@@ -11,6 +11,11 @@ ul {
 	list-style-type: none;
 }
 
+#container {
+ flex: 1 0 0;
+ overflow-y: auto;
+}
+
 /*--------------Side Navigation Styles--------------------*/
 #sidenav {
 	background-color: black;
@@ -103,30 +108,49 @@ header a:hover {
 }
 
 #mainnav li {
-	margin: 0 20px;
+	margin: 20px 20px;
 
 }
 
 #mainnav a {
+	color: white;
 	text-decoration: none;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 10px;
+	background-color: black;
+	border-radius: 20px;
 }
 
 
-/*--------------------Container Area------------------------*/
+/*--------------------ImgContainer Area------------------------*/
 
-#container {
- flex: 1 0 0;
- overflow-y: auto;
+#imgcontainer {
+	padding: 40px 30px;
 }
-
 /*-----------------------Footer Styles---------------------*/
 
 footer {
+	background-color: #F7F6F2;
+	padding: 10px 20px;
+	border-top: 1px solid grey;
 
 }
 
+footer ul {
+	justify-content: center;
+}
 
-/*-------------------Js Fade In Property-------------------*/
+footer li {
+	margin-right: 10px;
+}
+
+.developer {
+	text-decoration: none;
+	color: black;
+}
+
+/*-------------------Js Fade In class-------------------*/
 .hidden {
 	display: none;
 }
