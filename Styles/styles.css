@@ -119,14 +119,28 @@ header a:hover {
 	display: inline-block;
 	padding: 10px;
 	background-color: black;
-	border-radius: 20px;
 }
+
+#mainnav a:hover {
+	font-size: 20px;
+	color: grey;
+}
+
 
 
 /*--------------------ImgContainer Area------------------------*/
 
 #imgcontainer {
-	padding: 40px 30px;
+	padding: 30px 20px;
+}
+
+#imgcontainer img {
+	width: 280px;
+	padding: 10px;
+}
+
+#imgcontainer img:hover {
+	border: 2px solid black;
 }
 /*-----------------------Footer Styles---------------------*/
 
