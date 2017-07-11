@@ -15,3 +15,7 @@ $('h3.hidden').fadeIn(3000).removeClass('hidden');
 
 //When bottom left arrow is clicked
 //Page scrolls up to the top.
+$("#uparrow").click(function (){
+	$("html, body").animate({ scrollTop: 0 }, "slow");
+  	return false;
+});
