@@ -266,3 +266,21 @@ footer li {
 		display: flex;
 	}
 }
+
+@media screen and (max-width: 414px){
+	header h1 {
+		font-size: 70px;
+	}
+
+	header h3 {
+		font-size: 40px;
+	}
+
+	#imgcontainer img {
+		width: 95%;
+	}
+
+	.mobilenav {
+		flex-direction: row;
+	}
+}
