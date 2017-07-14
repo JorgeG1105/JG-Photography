@@ -21,11 +21,6 @@ ul {
 	color: #766E6B;
 }
 
-.mainNavActive {
-	font-size: 20px;
-	color: grey;
-	border: 5px solid grey;
-}
 
 /*-------------------------Top Navigation items---------------*/
 
@@ -73,7 +68,6 @@ ul {
 /*-------------Header Styles-------------------------------*/
 header {
 	padding: 40px 30px;
-	border-bottom: 1px solid grey;
 	background-color: #F7F6F2;
 }
 
@@ -116,11 +110,12 @@ header a:hover {
 #mainnav {
 	display: flex;
 	justify-content: center;
+	background-color: black;
 }
 
 
 #mainnav li {
-	margin: 20px 20px;
+	margin-right: 5px;
 
 }
 
@@ -129,7 +124,6 @@ header a:hover {
 	text-decoration: none;
 	letter-spacing: 1px;
 	padding: 10px;
-	background-color: black;
 }
 
 #mainnav a:hover {
@@ -137,7 +131,9 @@ header a:hover {
 	color: grey;
 }
 
-
+.hamburger {
+	display: none;
+}
 
 /*--------------------ImgContainer Area------------------------*/
 
@@ -147,6 +143,7 @@ header a:hover {
 	flex-wrap: wrap;
 	padding: 30px 20px;
 	justify-content: center;
+	background-color: #F7F6F2;
 }
 
 #imgcontainer img {
@@ -267,7 +264,7 @@ footer li {
 	}
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 592px){
 	header h1 {
 		font-size: 70px;
 	}
@@ -278,6 +275,14 @@ footer li {
 
 	#imgcontainer img {
 		width: 95%;
+	}
+
+	#mainnav a:not(:first-child) {
+		display: none;
+	}
+
+	.hamburger {
+		display: flex;
 	}
 
 	.mobilenav {

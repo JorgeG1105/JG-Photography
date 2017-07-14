@@ -15,3 +15,23 @@ $('h3.hidden').fadeIn(3000).removeClass('hidden');
 
 //When bottom left arrow is clicked
 //Page scrolls up to the top.
+
+//Image Filter
+$(document).ready(function () {
+	$("#mainnav ul li a").click(function (){
+		var category = $(this).attr("class");
+
+		if (category == "all" ){
+			$("#imgcontainer img").addClass("hidden");
+			setTimeout(function (){
+				$("#imgcontainer img").removeClass("hidden");
+			});
+		}
+		else {
+			$("#imgcontainer img").addClass("hidden");
+			setTimeout(function(){
+				$("."+category).removeClass("hidden");
+			});
+		}
+	});
+});
