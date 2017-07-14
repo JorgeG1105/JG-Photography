@@ -131,10 +131,6 @@ header a:hover {
 	color: grey;
 }
 
-.hamburger {
-	display: none;
-}
-
 /*--------------------ImgContainer Area------------------------*/
 
 #imgcontainer {
@@ -277,15 +273,7 @@ footer li {
 		width: 95%;
 	}
 
-	#mainnav a:not(:first-child) {
-		display: none;
-	}
-
-	.hamburger {
-		display: flex;
-	}
-
 	.mobilenav {
-		flex-direction: row;
+		flex-direction: column;
 	}
 }
