@@ -8,14 +8,6 @@ $(document).ready(function () {
 //Remove hidden class.
 $('h3.hidden').fadeIn(3000).removeClass('hidden');
 
-//When Top links are hovered
-//Slide the divs over a little bit.
-//On mouse off they go back to place
-
-
-//When bottom left arrow is clicked
-//Page scrolls up to the top.
-
 //Image Filter
 $(document).ready(function () {
 	$("#mainnav ul li a").click(function (){
@@ -34,4 +26,10 @@ $(document).ready(function () {
 			});
 		}
 	});
+});
+
+
+//When burger is clicked. Mobile nav is toggled.
+$(".burger").on("click", function (){
+	$("#mainnav").toggleClass("hidden");
 });

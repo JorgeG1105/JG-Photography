@@ -22,8 +22,6 @@ ul {
 }
 
 
-/*-------------------------Top Navigation items---------------*/
-
 /*--------------Side Navigation Styles--------------------*/
 #sidenav {
 	background-color: black;
@@ -217,6 +215,20 @@ footer li {
 	background-color: grey;
 }
 
+.burger {
+	background-color: black;
+	width: 100%;
+	text-align: right;
+	display: none;
+	cursor: pointer;
+}
+
+.burger i {
+	color: white;
+	padding: 5px;
+	margin-right: 10px;
+}
+
 /*-----------------Mobile Footer------------------------------*/
 .mobilefooter {
 	display: none;
@@ -260,7 +272,7 @@ footer li {
 	}
 }
 
-@media screen and (max-width: 592px){
+@media screen and (max-width: 600px){
 	header h1 {
 		font-size: 70px;
 	}
@@ -273,7 +285,42 @@ footer li {
 		width: 95%;
 	}
 
-	.mobilenav {
-		flex-direction: column;
+	#mainnav {
+		display: block;
 	}
+
+	#mainnav ul {
+		flex-direction: column;
+		width: 100%;
+		margin: 0;
+		text-align: center;
+		padding: 0;
+	}
+
+	#mainnav li {
+		border-bottom: 1px solid grey;
+		padding: 10px;
+	}
+
+	.mobilenav {
+		display: block;
+	}
+
+	.mobilenav ul {
+		flex-direction: column;
+		width: 100%;
+		margin: 0;
+		text-align: center;
+		padding: 0;
+
+	}
+
+	.mobilenav li {
+		border-bottom: 1px solid grey;
+	}
+
+	.burger {
+		display: block;
+	}
+
 }
