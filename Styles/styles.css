@@ -16,6 +16,7 @@ ul {
  overflow-y: auto;
 }
 
+
 /*------------------------Classes to be added to the current active link on a page----------*/
 .active {
 	color: #766E6B;
@@ -173,7 +174,7 @@ footer li {
 
 /*-------------------Js Fade In class-------------------*/
 .hidden {
-	display: none;
+	display: none !important;
 }
 
 /*-------------------Flexbox-----------------------*/
@@ -273,6 +274,7 @@ footer li {
 }
 
 @media screen and (max-width: 600px){
+
 	header h1 {
 		font-size: 70px;
 	}

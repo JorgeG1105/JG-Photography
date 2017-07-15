@@ -29,7 +29,7 @@ $(document).ready(function () {
 });
 
 
-//When burger is clicked. Mobile nav is toggled.
+//When burger is clicked. Mobile nav and mainnav are toggled.
 $(".burger").on("click", function (){
 	$("#mainnav").toggleClass("hidden");
 	$(".mobilenav").toggleClass("hidden");
