@@ -1,15 +1,14 @@
-//When the page loads, Fade in all divs with class hidden.
-//Then Remove hidden class.
 $(document).ready(function () {
-    $('div.hidden').fadeIn(2000).removeClass('hidden');
-});
+	
+	//When the page loads, Fade in all divs with class hidden.
+	//Then Remove hidden class.
+	$('div.hidden').fadeIn(2000).removeClass('hidden');
+	
+	//Fade In all h3 with class hidden.
+	//Remove hidden class.
+	$('h3.hidden').fadeIn(3000).removeClass('hidden');
 
-//Fade In all h3 with class hidden.
-//Remove hidden class.
-$('h3.hidden').fadeIn(3000).removeClass('hidden');
-
-//Image Filter
-$(document).ready(function () {
+	//Image Filter
 	$("#mainnav ul li a").click(function (){
 		var category = $(this).attr("class");
 
@@ -26,17 +25,10 @@ $(document).ready(function () {
 			});
 		}
 	});
-});
 
-
-//When burger is clicked. Mobile nav and mainnav are toggled.
-$(".burger").on("click", function (){
-	$("#mainnav").toggleClass("hidden");
-	$(".mobilenav").toggleClass("hidden");
-});
-
-//When Arrow is clicked page scrolls to the top of the screen.
-$('.upArrow').click(function(){
-	$('html, body').animate({scrollTop : 0},800);
-	return false;
+	//When burger is clicked. Mobile nav and mainnav are toggled.
+	$(".burger").on("click", function (){
+		$("#mainnav").toggleClass("hidden");
+		$(".mobilenav").toggleClass("hidden");
+	});
 });
