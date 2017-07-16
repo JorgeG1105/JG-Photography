@@ -34,3 +34,9 @@ $(".burger").on("click", function (){
 	$("#mainnav").toggleClass("hidden");
 	$(".mobilenav").toggleClass("hidden");
 });
+
+//When Arrow is clicked page scrolls to the top of the screen.
+$('.upArrow').click(function(){
+	$('html, body').animate({scrollTop : 0},800);
+	return false;
+});
