@@ -108,6 +108,7 @@ header a:hover {
 	display: flex;
 	justify-content: center;
 	background-color: black;
+	color: white;
 }
 
 
@@ -148,6 +149,11 @@ header a:hover {
 #imgcontainer img:hover {
 	border: 2px solid black;
 }
+
+#imgcontainer div {
+	text-align: center;
+}
+
 /*-----------------------Footer Styles---------------------*/
 
 footer {
