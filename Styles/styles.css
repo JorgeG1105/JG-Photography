@@ -154,6 +154,32 @@ header a:hover {
 	text-align: center;
 }
 
+/*-------------------------Rates Packages--------------------*/
+.ratecontainer {
+	border: 1px solid black;
+	padding-right: 40px;
+	padding: 0;
+	margin: 10px;
+	text-align: center;
+}
+
+.ratecontainer h1 {
+	display: block;
+	color: white;
+	background-color: black;
+	margin: 0;
+	padding: 10px;
+}
+
+.ratecontainer ul {
+	padding: 5px;
+}
+
+/*-----------------------Form---------------------------*/
+input, textarea, button {
+	margin: 5px;
+}
+
 /*-----------------------Footer Styles---------------------*/
 
 footer {
